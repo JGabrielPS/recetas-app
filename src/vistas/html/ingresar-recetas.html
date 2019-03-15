@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ingresar Nueva Receta</title>
+    <link href="../boostrap/boostrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="p-4">
+        <div class="form-group">
+            <input type="text" class="form-control" id="nombreReceta" placeholder="Nombre de la Receta" autofocus>
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="dispositivo">
+                <option>Seleccionar el dispositivo de cocción</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" id="tiempoCoccion" placeholder="Tiempo de cocción en minutos">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" id="tiempoPreparacion" placeholder="Tiempo de preparación en minutos">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" id="rendimiento" placeholder="Rendimiento de unidades de la receta">
+        </div>
+        <form class="form-inline" id="ingredientes">
+            <select class="form-control" id="ingrediente" name="ingrediente" data-ingrediente="0">
+                <option>Seleccione el ingrediente</option>
+            </select>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" data-cantidad="0" placeholder="Cantidad"
+                step=".01">
+            <label class="form-control" id="unidad" data-unidad="0">Unidad de Medida</label>
+        </form>
+        <div class="form-group">
+            <br>
+            <button class="btn-info btn-sm form-control" id="agregar">
+                AGREGAR INGREDIENTE
+            </button>
+        </div>
+        <button class="btn btn-primary btn-block" id="guardar">
+            Guardar
+        </button>
+    </div>
+
+    <script src="../js/ingresar-recetas.js" type="text/javascript"></script>
+</body>
+
+</html>

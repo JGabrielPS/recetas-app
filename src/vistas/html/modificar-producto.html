@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modificar Producto</title>
+    <link href="../boostrap/boostrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <form class="p-4">
+        <div class="form-group">
+            <input type="text" class="form-control" id="nombreProducto" 
+            placeholder="Nombre del Producto" autofocus>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="marcaProducto">
+        </div>
+        <div class="form-inline">
+            <select id="tipoUnidad" class="form-control">
+                <option>Elegir el tipo de medida...</option>
+                <option>Kg</option>
+                <option>L</option>
+            </select>
+            <input type="number" class="form-control" id="unidad" step=".01">
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="number" class="form-control" id="precioUnidad">
+        </div>
+        <button class="btn btn-primary btn-block">
+            Modificar
+        </button>
+    </form>
+
+    <script src="" type="text/javascript"></script>
+</body>
+</html>
